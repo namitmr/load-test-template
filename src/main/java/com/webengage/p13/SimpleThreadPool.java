@@ -70,10 +70,10 @@ public class SimpleThreadPool {
 
 
 
-        ExecutorService executor = Executors.newFixedThreadPool(5);
+        ExecutorService executor = Executors.newFixedThreadPool(20);
 //        ExecutorService executor = Executors.newWorkStealingPool(20);
 //        List<Callable<Void>> list = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 20; i++) {
 
             Runnable myRunnable = new MyRunnable(i);
 
